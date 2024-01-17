@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="storage/img/NikeLogoPNGImage.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Landing Page</title>
 </head>
 <body>
@@ -34,22 +35,26 @@
     <section>
         <div class="content">
             <div class="main-content">
-                <h1>Nike</h1>
-                <h2>Air Max Plus</h2>
-                <h4>MAKE THE GRAUND SHAKE</h4>
-                <p>let the attude have the edge in your Nike Air Max Plus, a Tuned Air experience that offers premium stability and unbeliveable cushioning featuring the OG's wacy desing lines, TPU accends and airy meshon the upper it celebrates definate style.</p>
-
-            </div>
-            <div class="order">
-                <h3>$249.99</h3>
-                <button>PRE-ORDER NOW</button>
+                <h1 data-aos="fade-right" data-aos-duration="2000"> Nike</h1>
+                <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">Air Max Plus</h2>
+                <h4 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">MAKE THE GRAUND SHAKE</h4>
+                <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">let the attude have the edge in your Nike Air Max Plus, a Tuned Air experience that offers premium stability and unbeliveable cushioning featuring the OG's wacy desing lines, TPU accends and airy meshon the upper it celebrates definate style.</p>
+                <div class="order">
+                    <h3 data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="800">$249.99</h3>
+                    <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800">PRE-ORDER NOW</button>
+                </div>   
             </div>
             <div class="image">
                 <img src="storage/img/shoes.png" alt="">
             </div>
         </div>
     </section>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset:1
+        });
+      </script>
 </body>
 </html>
 
