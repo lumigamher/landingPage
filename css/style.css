@@ -56,7 +56,8 @@ nav{
     flex-direction: column;
     top: 0;
     left: 0;   
-    align-items: center;
+    align-content: center;
+    height: 100%;
 }
 
 
@@ -242,7 +243,8 @@ para movil nada mas agregamos boton  */
 
 @media (max-width: 768px) {
     .container .links {
-        transform: translateX(-100%);            
+        transform: translateX(-100%);
+        transition: transform 0.3s;            
     } 
     .links.active{
         transform: translateX(0);  
