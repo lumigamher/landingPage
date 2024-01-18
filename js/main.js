@@ -1,7 +1,7 @@
 // AOS.init({
 //     offset:1
 // });
-let nav = document.querySelector('nav');
+let links = document.querySelector('.container .links');
 document.querySelector('.boton').addEventListener('click', function(){
-    nav.classList.toggle('active')
+    links.classList.toggle('active')
 });
