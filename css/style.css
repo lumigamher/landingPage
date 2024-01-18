@@ -234,6 +234,7 @@ para movil nada mas agregamos boton  */
         flex-direction: row; /* Cambia la dirección a horizontal */
         background-color: transparent; /* Puedes ajustar el fondo según tus necesidades */   
         position: inherit;
+        align-items: center;
     } 
     nav{
         display: flex;
@@ -243,10 +244,22 @@ para movil nada mas agregamos boton  */
 
 @media (max-width: 768px) {
     .container .links {
+        display: flex;
         transform: translateX(-100%);
-        transition: transform 0.3s;            
+        transition: transform 0.3s; 
     } 
+
+    .container .links a{
+        top: 20px;
+        margin: 5px 20px;
+    }
+
     .links.active{
         transform: translateX(0);  
     }  
+    .links a:hover::before,
+    .links a:hover{
+        color: #f74f10;
+        width: 85%;
+    }
 }
